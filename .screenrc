@@ -1,0 +1,10 @@
+escape ^T^T
+autodetach on
+hardstatus alwayslastline "%Lw"
+startup_message off
+defencoding utf8
+encoding utf-8 utf-8
+vbell off
+defscrollback 5000
+autodetach on
+altscreen on
