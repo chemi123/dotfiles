@@ -1,14 +1,14 @@
 set number
 set showmatch
-set softtabstop=4
-"set expandtab
+set tabstop=4
+set expandtab
 set shiftwidth=4
 set encoding=utf-8
 set noerrorbells
 set autoindent
 syntax on
 set scrolloff=5
-set hlsearch
+filetype plugin indent on
 
 hi DiffAdd    ctermfg=black ctermbg=2
 hi DiffChange ctermfg=black ctermbg=3
