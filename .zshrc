@@ -184,6 +184,7 @@ esac
 
 PATH=::/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/cargo/bin:$PATH"
   
 # vim:set ft=zsh:
 #eval "$(chef shell-init zsh)"
