@@ -48,7 +48,6 @@ endfunction
 function! NoreMapping()
     nnoremap gd :LspDefinition<CR>
 
-    " Apply auto close brackets for Go and Python files
     let fileTypes = ['go', 'python', 'rust', 'vim']
     call AutoCloseBracketsForFiletypes(fileTypes)
 endfunction
