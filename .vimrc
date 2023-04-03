@@ -17,7 +17,7 @@ function! BasicSettings()
 endfunction
 
 " LSP settings
-function! LSPSettings()
+function! PluginSettings()
     call plug#begin('~/.vim/plugged')
     Plug 'prabirshrestha/vim-lsp'
     Plug 'prabirshrestha/asyncomplete.vim'
@@ -54,5 +54,5 @@ endfunction
 
 " main
 call BasicSettings()
-call LSPSettings()
+call PluginSettings()
 call NoreMapping()
