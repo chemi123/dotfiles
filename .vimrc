@@ -25,15 +25,6 @@ function! PluginSettings()
     call plug#end()
 endfunction
 
-" LSP settings
-if executable('gopls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'gopls',
-        \ 'cmd': {server_info->['gopls']},
-        \ 'whitelist': ['go'],
-        \ })
-endif
-
 " Function to automatically close brackets for given filetypes
 function! AutoCloseBracketsForFiletypes(filetypes)
     for filetype in a:filetypes
@@ -52,7 +43,19 @@ function! NoreMapping()
     call AutoCloseBracketsForFiletypes(fileTypes)
 endfunction
 
+function! CheckExectablesAndApply()
+    " LSP settings
+    if executable('gopls')
+        au User lsp_setup call lsp#register_server({
+            \ 'name': 'gopls',
+            \ 'cmd': {server_info->['gopls']},
+            \ 'whitelist': ['go'],
+            \ })
+    endif
+endfunction
+
 " main
 call BasicSettings()
 call PluginSettings()
 call NoreMapping()
+call CheckExectablesAndApply()
