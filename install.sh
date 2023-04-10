@@ -7,3 +7,4 @@ ln -sf ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.screenrc ~/.screenrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+touch ~/local_zsh_customization
