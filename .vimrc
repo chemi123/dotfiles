@@ -43,7 +43,7 @@ function! NoreMapping()
     call AutoCloseBracketsForFiletypes(fileTypes)
 endfunction
 
-function! CheckExectablesAndApply()
+function! LspRegisterAndEnable()
     " LSP settings
     if executable('gopls')
         au User lsp_setup call lsp#register_server({
@@ -57,5 +57,5 @@ endfunction
 " main
 call BasicSettings()
 call PluginSettings()
+call LspRegisterAndEnable()
 call NoreMapping()
-call CheckExectablesAndApply()
