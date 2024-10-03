@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if [[ -f ~/.zshrc_tmux_conf ]]; then
+    source ~/.zshrc_tmux_conf
+fi
+
 if [[ -f ~/.local_zsh_customization ]]; then
     source ~/.local_zsh_customization
 fi
