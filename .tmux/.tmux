@@ -1,1 +1,0 @@
-/home/chemimotty/dotfiles/.tmux
