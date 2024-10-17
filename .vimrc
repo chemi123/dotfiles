@@ -7,6 +7,7 @@ function! BasicSettings()
     set encoding=utf-8
     set noerrorbells
     set autoindent
+    set paste
     syntax on
     set scrolloff=5
     filetype plugin indent on
