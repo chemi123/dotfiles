@@ -9,6 +9,7 @@ ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.screenrc ~/.screenrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.tmux ~/.tmux
+ln -sf ~/dotfiles/nvim ~/.config/nvim
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
