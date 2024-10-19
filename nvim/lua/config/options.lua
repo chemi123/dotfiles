@@ -3,7 +3,6 @@
 -- Add any additional options here
 
 vim.opt.relativenumber = false
-vim.opt.mouse = ""
 
 vim.cmd([[
   highlight Visual guibg=#3b4252 guifg=#ffffff
