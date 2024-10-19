@@ -6,6 +6,7 @@
 
 以下はより快適に使うなら必要。
 
+- JetBrainsMono Nert Font(lazyvimが使う多様なアイコンに対応できる)
 - tmux(一応screenの設定もあるのでどちらか)
-- neovim
-- ripgrep(Telescopeでgrep検索したいなら)
+- neovim(>=0.8じゃないとlazyvimが対応しない)
+- ripgrep(neovimのpluginで便利なTelescopeでgrep検索したいなら必須)
