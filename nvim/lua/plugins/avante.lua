@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
   opts = {
-    provider = "anthropic", -- OpenAI から Anthropic に変更
+    provider = "claude",
     anthropic = {
       api_key = os.getenv("ANTHROPIC_API_KEY"), -- 環境変数から API キーを読み込む
       model = "claude-3-7-sonnet-20250219", -- Claude 3.7 Sonnet モデル
