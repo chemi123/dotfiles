@@ -5,8 +5,7 @@ bind-key C-t send-prefix
 
 set-option -g set-clipboard on
 
-set-option -ga terminal-overrides ",xterm-256color:Tc"
-
-set-option -sg escape-time 0
+set-option -g default-terminal "tmux-256color"
+set-option -sa terminal-overrides ",xterm-256color:Tc"
 
 setw -g mode-keys vi
