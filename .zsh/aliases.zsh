@@ -15,6 +15,12 @@ function _set_git_aliases() {
 }
 
 function _set_general_aliases() {
+  if ls --color -d . &>/dev/null; then
+    alias ls='ls --color=tty'
+  elif ls -G -d . &>/dev/null; then
+    alias ls='ls -G'
+  fi
+
   alias ll='ls -lh'
   alias la='ls -lAh'
   alias l='ls -CF'
