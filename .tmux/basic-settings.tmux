@@ -10,4 +10,4 @@ set-option -sa terminal-overrides ",xterm-256color:Tc"
 
 setw -g mode-keys vi
 
-bind-key E split-window -h \; split-window -h \; select-layout even-horizontal
+bind-key e run-shell 'n=$(tmux list-panes | wc -l); while [ $n -lt 3 ]; do tmux split-window -h; n=$((n+1)); done; tmux select-layout even-horizontal'
