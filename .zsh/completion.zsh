@@ -2,6 +2,7 @@ function set_completion() {
   autoload -Uz compinit && compinit
   autoload -U +X bashcompinit && bashcompinit
 
+  WORDCHARS=''
   zmodload -i zsh/complist
 
   setopt auto_menu
